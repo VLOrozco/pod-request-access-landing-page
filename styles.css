@@ -1,0 +1,59 @@
+/******************/
+/* general reset  */
+/******************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Chivo', sans-serif;
+  font-size: 14px;
+  color: rgb(194, 203, 229);
+}
+
+body {
+  background-color: #121725;
+}
+
+/******************/
+/* typography     */
+/******************/
+#title,
+.text {
+  font-weight: 200;
+  text-align: center;
+}
+
+#title {
+  font-size: 26px;
+  line-height: 38px;
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+}
+  #title span {
+    color: rgb(84, 230, 175);
+  }
+
+.text {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+/* form component typography */
+#email-form .input {
+  color: rgb(255, 255, 255);
+}
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 0.5; /* Firefox */
+  }
+  ::-ms-input-placeholder { 
+    /* Microsoft Edge */
+    color: rgb(255, 255, 255);
+  } 
+
+#email-form #btn {
+  color: rgb(18, 23, 37);
+}
+
+
