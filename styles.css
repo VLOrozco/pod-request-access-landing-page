@@ -8,9 +8,11 @@
   font-family: 'Chivo', sans-serif;
   font-size: 14px;
   color: rgb(194, 203, 229);
+  overflow: hidden;
 }
 
 body {
+  position: relative;
   background-color: #121725;
 }
 
@@ -24,12 +26,13 @@ body {
 }
 
 #title {
-  font-size: 26px;
+  font-size: 2em;
   line-height: 38px;
   color: rgb(255,255,255);
   text-transform: uppercase;
 }
   #title span {
+    font-size: 1em;
     color: rgb(84, 230, 175);
   }
 
@@ -54,6 +57,125 @@ body {
 
 #email-form #btn {
   color: rgb(18, 23, 37);
+  font-weight: 600;
 }
 
+/******************/
+/* grid           */
+/******************/
+.grid {
+  display: grid;
+}
+  #title {
+    order: 1;
+  }
+  .text {
+    order: 2;
+  }
+  #email-form {
+    order: 4;
+  }
+  #podcast-publishing {
+    order: 3;
+  }
 
+/******************/
+/* general styles */
+/******************/
+
+.bg-image {
+  position: absolute;
+  z-index: -2;
+}
+#logo {
+  width: 134.85px;
+  height: 56px;
+  position: absolute;
+  z-index: 1;
+  top: 4.5em;
+  left: 8em;
+
+}
+
+#container {
+  background-color: rgb(18, 23, 37);
+  opacity: 0.9;
+  height: 100vh;
+  padding-top: 12.6em;
+}
+  #container .wrapper {
+    width: 24.8em;
+    height: 30em;
+    margin: auto;
+  }
+
+.main-text {
+  height: 14.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+  #title {
+    height: 2.5em;
+  }
+  .main-text .text {
+    width: 90%;
+    height: 7em;
+    margin: auto;
+    margin-top: 1.6em;
+  }
+
+#podcast-publishing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  opacity: 0.7;
+}
+  .spotify {
+    width: 18%;
+    height: 90%;
+  }
+  .apple {
+    width: 15%;
+    height: 90%;
+  }
+  .google {
+    width: 28%;
+    height: 78%;
+  }
+  .pocket {
+    width: 23%;
+    height: 76%;
+  }
+
+#email-form {
+  width: 100%;
+  height: 9em;
+  padding-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  .input,
+  #btn {
+    width: 100%;
+    height: 46px;
+    border-radius: 28px;
+    outline: none;
+    border: none;
+  }
+
+  #email-form .input {
+    background-color: rgba(44, 52, 75, 1);
+    padding-left: 32px;
+  }
+
+  #btn {
+    background: rgba(84, 230, 175, 1);
+  }
+
+.bg-dots {
+  position: absolute;
+  visibility: hidden;
+}
