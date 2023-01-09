@@ -192,6 +192,10 @@ body {
   visibility: hidden;
 }
 
+#validation {
+  visibility: hidden;
+}
+
 /******************/
 /* media queries  */
 /******************/
@@ -278,7 +282,7 @@ body {
   /********************************/
   #email-form {
     width: 427px;
-    height: 58px;
+    height: 110px;
     position: relative;
     margin-top: 2.7em;
     padding-top: 0;
@@ -294,14 +298,22 @@ body {
     width: 162px;
     height: 46px;
   }
+  #validation {
+    color: rgb(255, 0, 0);
+    width: 175px;
+    height: 18px;
+    font-size: 14px;
+    position: absolute;
+    top: 4.5em;
+    left: 2.4em;
+  }
 
   /******************************************/
   /* podcasts logos | media query min 550px */
   /******************************************/
   #podcast-publishing {
-    height: 29px;
+    height: 32px;
     width: 536px;
-    margin-top: 64px;
   }
 
   /*********************************************/
