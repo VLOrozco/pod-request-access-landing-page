@@ -321,4 +321,35 @@ body {
   }
 }
 
+/**********************************/
+/* media query | min-width 875px  */
+/**********************************/
+@media screen and (min-width: 875px) {
+  body {
+    padding-top: 130px;
+    padding-left: 165px;
+  }
+  #logo {
+    top: 102px;
+    left: 165px;
+  }
+  #container {
+    width: 723px;
+    top: 9.3em;
+    left: 0;
+  }
+  #podcast-publishing {
+    opacity: 0.5;
+  }
 
+  .bg-image {
+    background-image: url("./assets/image-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-dots {
+    bottom: 6.2em;
+    left: 85.3em;
+  }
+}
