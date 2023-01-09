@@ -24,7 +24,6 @@ body {
   font-weight: 200;
   text-align: center;
 }
-
 #title {
   font-size: 2em;
   line-height: 38px;
@@ -35,13 +34,12 @@ body {
     font-size: 1em;
     color: rgb(84, 230, 175);
   }
-
 .text {
   line-height: 25px;
   font-size: 15px;
 }
 
-/* form component typography */
+/* form typography */
 #email-form .input {
   color: rgb(255, 255, 255);
 }
@@ -56,8 +54,8 @@ body {
   } 
 
 #email-form #btn {
-  color: rgb(18, 23, 37);
   font-weight: 600;
+  color: rgb(18, 23, 37);
 }
 
 /******************/
@@ -112,17 +110,16 @@ body {
 }
 
 #container {
-  background-color: rgb(18, 23, 37);
-  opacity: 0.9;
   height: 100vh;
   padding-top: 12.6em;
+  background-color: rgb(18, 23, 37);
+  opacity: 0.9;
 }
   #container .wrapper {
     width: 24.8em;
     height: 30em;
     margin: auto;
   }
-
 .main-text {
   height: 14.5em;
 }
@@ -172,9 +169,8 @@ body {
   #btn {
     width: 100%;
     height: 46px;
-    border-radius: 28px;
-    outline: none;
     border: none;
+    border-radius: 28px;
     cursor: pointer;
   }
 
@@ -184,52 +180,60 @@ body {
   }
 
   #btn {
-    background: rgba(84, 230, 175, 1);
+    background-color: rgba(84, 230, 175, 1);
   }
 
+#validation {
+  font-size: 14px;
+  color: rgb(255, 0, 0);
+  width: 250px;
+  height: 18px;
+  position: absolute;
+  top: 31.8em;
+  left: 5em;
+  visibility: hidden;
+}
+
+/*************************************/
+/* footer background | mobile styles */
+/*************************************/
 .bg-dots {
   position: absolute;
   visibility: hidden;
 }
 
-#validation {
-  visibility: hidden;
-}
-
-/******************/
-/* media queries  */
-/******************/
-
+/**********************************/
+/* media query | min-width 550px  */
+/**********************************/
 @media screen and (min-width: 550px) {
   body {
-    outline: 1px solid white;
     height: 100vh;
+  }
+  .bg-image {
+    background-image: url("./assets/image-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 491px;
+    height: 775px;
+    top: -1em;
+    right: -1.3em;
+    opacity: 0.9;
   }
   #logo {
     top: 3.5em;
     left: 3em;
   }
-  .bg-image {
-    background-image: url("./assets/image-tablet.jpg");
-    background-repeat: no-repeat;
-    /* outline: 1px solid white; */
-    top: -1em;
-    right: -1.3em;
-    opacity: 0.9;
-    width: 491px;
-    height: 775px;
-    background-size: cover;
-  }
 
-  /******************/
-  /* grid           */
-  /******************/
+  /**************************/
+  /* grid | min-width 550px */
+  /**************************/
   #email-form {
     order: 3;
   }
   #podcast-publishing {
     order: 4;
   }
+
   /******************************************/
   /* general styles | media query min 550px */
   /******************************************/
@@ -243,39 +247,29 @@ body {
     opacity: 1;
   }
     #container .wrapper {
-      width: 24.8em;
-      height: 30em;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
-  
   .main-text {
-    height: 227px;
+    height: 16.21em;
   }
     #title {
+      font-size: 48px;
+      line-height: 56px;
+      text-align: left;
       height: 2.5em;
     }
     .main-text .text {
       font-size: 18px;
       line-height: 28px;
-      width: 90%;
+      text-align: left;
+      width: 445px;
       height: 84px;
       margin: 0;
+      margin-left: 3px;
     }
-  #container .wrapper {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
-  #title {
-    font-size: 48px;
-    line-height: 56px;
-    text-align: left;
-  }
-  .main-text .text {
-    width: 445px;
-    margin-left: 3px;
-    text-align: left;
-  }
 
   /********************************/
   /* form | media query min 550px */
@@ -283,30 +277,25 @@ body {
   #email-form {
     width: 427px;
     height: 110px;
-    position: relative;
     margin-top: 2.7em;
     padding-top: 0;
+    position: relative;
   }
-  .input {
-    width: 427px;
-    height: 58px;
-  }
-  #btn {
-    position: absolute;
-    top: 6.5px;
-    right: 6.5px;
-    width: 162px;
-    height: 46px;
-  }
-  #validation {
-    color: rgb(255, 0, 0);
-    width: 175px;
-    height: 18px;
-    font-size: 14px;
-    position: absolute;
-    top: 4.5em;
-    left: 2.4em;
-  }
+    .input {
+      width: 427px;
+      height: 58px;
+    }
+    #btn {
+      width: 162px;
+      height: 46px;
+      position: absolute;
+      top: 6.5px;
+      right: 6.5px;
+    }
+    #validation {
+      top: 4.5em;
+      left: 2.4em;
+    }
 
   /******************************************/
   /* podcasts logos | media query min 550px */
