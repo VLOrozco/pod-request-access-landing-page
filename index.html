@@ -30,10 +30,13 @@
       </div>
 
       <!-- Email Validation Form -->
-      <div id="email-form">
-        <input class="input" type="text" placeholder="Email address">
-        <button id="btn">Request Access</button>
-      </div>
+      <form id="email-form" name="emailForm" action="#">
+        <input id="input" class="input" type="text" name="email" placeholder="Email address">
+        <button id="btn" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.emailForm.email)">Request Access</button>
+        <span id="validation">
+          Oops! Please check your email
+        </span>
+      </form>
 
       <!-- Podcasts -->
       <div id="podcast-publishing">
