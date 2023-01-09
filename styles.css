@@ -13,7 +13,7 @@
 
 body {
   position: relative;
-  background-color: #121725;
+  background-color: rgb(18, 23, 37);
 }
 
 /******************/
@@ -98,7 +98,6 @@ body {
 /******************/
 /* general styles */
 /******************/
-
 .bg-image {
   position: absolute;
   z-index: -2;
@@ -107,10 +106,9 @@ body {
   width: 134.85px;
   height: 56px;
   position: absolute;
-  z-index: 1;
   top: 4.5em;
   left: 8em;
-
+  z-index: 1;
 }
 
 #container {
@@ -138,6 +136,9 @@ body {
     margin-top: 1.6em;
   }
 
+/**********************************/
+/* podcasts logos | mobile styles */
+/**********************************/
 #podcast-publishing {
   height: 20px;
   opacity: 0.7;
@@ -159,6 +160,9 @@ body {
     height: 76%;
   }
 
+/************************/
+/* form | mobile styles */
+/************************/
 #email-form {
   width: 100%;
   height: 9em;
@@ -171,6 +175,7 @@ body {
     border-radius: 28px;
     outline: none;
     border: none;
+    cursor: pointer;
   }
 
   #email-form .input {
@@ -186,3 +191,133 @@ body {
   position: absolute;
   visibility: hidden;
 }
+
+/******************/
+/* media queries  */
+/******************/
+
+@media screen and (min-width: 550px) {
+  body {
+    outline: 1px solid white;
+    height: 100vh;
+  }
+  #logo {
+    top: 3.5em;
+    left: 3em;
+  }
+  .bg-image {
+    background-image: url("./assets/image-tablet.jpg");
+    background-repeat: no-repeat;
+    /* outline: 1px solid white; */
+    top: -1em;
+    right: -1.3em;
+    opacity: 0.9;
+    width: 491px;
+    height: 775px;
+    background-size: cover;
+  }
+
+  /******************/
+  /* grid           */
+  /******************/
+  #email-form {
+    order: 3;
+  }
+  #podcast-publishing {
+    order: 4;
+  }
+  /******************************************/
+  /* general styles | media query min 550px */
+  /******************************************/
+  #container {
+    width: 635px;
+    height: 509px;
+    padding-top: 6.8em;
+    position: relative;
+    top: 18.3em;
+    left: 3rem;
+    opacity: 1;
+  }
+    #container .wrapper {
+      width: 24.8em;
+      height: 30em;
+    }
+  
+  .main-text {
+    height: 227px;
+  }
+    #title {
+      height: 2.5em;
+    }
+    .main-text .text {
+      font-size: 18px;
+      line-height: 28px;
+      width: 90%;
+      height: 84px;
+      margin: 0;
+    }
+  #container .wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+  }
+  .main-text .text {
+    width: 445px;
+    margin-left: 3px;
+    text-align: left;
+  }
+
+  /********************************/
+  /* form | media query min 550px */
+  /********************************/
+  #email-form {
+    width: 427px;
+    height: 58px;
+    position: relative;
+    margin-top: 2.7em;
+    padding-top: 0;
+  }
+  .input {
+    width: 427px;
+    height: 58px;
+  }
+  #btn {
+    position: absolute;
+    top: 6.5px;
+    right: 6.5px;
+    width: 162px;
+    height: 46px;
+  }
+
+  /******************************************/
+  /* podcasts logos | media query min 550px */
+  /******************************************/
+  #podcast-publishing {
+    height: 29px;
+    width: 536px;
+    margin-top: 64px;
+  }
+
+  /*********************************************/
+  /* footer background | media query min 550px */
+  /*********************************************/
+  .bg-dots {
+    visibility: visible;
+    bottom: 0;
+    left: 3em;
+  }
+  /*********************************************/
+  /* button component  | media query min 550px */
+  /*********************************************/
+  #btn:hover {
+    background-color: rgb(176, 255, 226);
+  }
+}
+
+
