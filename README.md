@@ -58,13 +58,9 @@ Users should be able to:
 - JavaScript | Form : Email address validation
 - Mobile-first workflow
 
----
-
 ### What I learned
 
 I learned about the RegExp sequence of characters and assertions used to search a pattern, in this project's example: an email validation form, within a users input. I learned that **Regular expressions are a way to describe patterns in string data**. This has piqued my interest in learning more on how to build RegExp patterns!
-
----
 
 ### Continued development
 
