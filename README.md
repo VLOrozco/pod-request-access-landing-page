@@ -39,12 +39,15 @@ Users should be able to:
 ## Screenshot
 
 ### Mobile View
+
 ![mobile view](./assets/mobile-view.png)
 
 ### Tablet View
+
 ![tablet view](./assets/tablet-view.png)
 
 ### Desktop View
+
 ![desktop view](./assets/desktop-view.png)
 
 ---
