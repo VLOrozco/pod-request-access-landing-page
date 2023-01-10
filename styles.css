@@ -97,6 +97,11 @@ body {
 /* general styles */
 /******************/
 .bg-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/image-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   z-index: -2;
 }
@@ -113,7 +118,7 @@ body {
   height: 100vh;
   padding-top: 12.6em;
   background-color: rgb(18, 23, 37);
-  opacity: 0.9;
+  opacity: 0.8;
 }
   #container .wrapper {
     width: 24.8em;
@@ -211,8 +216,6 @@ body {
   }
   .bg-image {
     background-image: url("./assets/image-tablet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 491px;
     height: 775px;
     top: -1em;
@@ -310,7 +313,7 @@ body {
   /*********************************************/
   .bg-dots {
     visibility: visible;
-    bottom: 0;
+    bottom: 6em;
     left: 3em;
   }
   /**************************************************/
@@ -344,8 +347,9 @@ body {
 
   .bg-image {
     background-image: url("./assets/image-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    top: -1em;
+    right: 0;
+    width: 68%;
   }
 
   .bg-dots {
