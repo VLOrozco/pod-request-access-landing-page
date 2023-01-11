@@ -313,8 +313,8 @@ body {
   /*********************************************/
   .bg-dots {
     visibility: visible;
-    bottom: 0;
-    left: 3em;
+    bottom: -1em;
+    left: 2.3em;
   }
   /**************************************************/
   /* email validation form  | media query min 550px */
@@ -353,7 +353,9 @@ body {
   }
 
   .bg-dots {
-    bottom: 15em;
-    left: 85.3em;
+    position: absolute;
+    right: 0;
+    bottom: 4.4em;
+    margin-left: auto;
   }
 }
