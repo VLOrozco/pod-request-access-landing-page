@@ -12,14 +12,14 @@
 </head>
 <body>
   <!-- background images & logo -->
-  <div class="bg-image"></div>
+  <div class="bg-image" aria-hidden="true"></div>
 
   <img id="logo" src="./assets/logo.svg" alt="pod logo">
 
   <div id="container">
     <div class="wrapper grid">
       <!-- Main text -->
-      <div class="main-text">
+      <main class="main-text">
         <h1 id="title">
           <span>Publish your podcasts</span>
           everywhere.
@@ -28,11 +28,12 @@
         <p class="text">
           Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
         </p>
-      </div>
+      </main>
 
       <!-- Email Validation Form -->
       <form id="email-form" name="emailForm" action="#">
-        <input id="input" class="input" type="text" name="email" placeholder="Email address">
+        <input id="input" class="input" type="text" name="email" placeholder="Email address" required />
+        <label for="input" class="sr-only" aria-labelledby="input">Email address</label>
         <button id="btn" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.emailForm.email)">Request Access</button>
         <span id="validation">
           Oops! Please check your email
@@ -40,11 +41,11 @@
       </form>
 
       <!-- Podcasts -->
-      <div id="podcast-publishing">
-        <img class="spotify" src="./assets/spotify.svg" alt="spotify logo">
-        <img class="apple" src="./assets/apple-podcast.svg" alt="apple podcast logo">
-        <img class="google" src="./assets/google-podcasts.svg" alt="google podcasts logo">
-        <img class="pocket" src="./assets/pocket-casts.svg" alt="pocket casts logo">
+      <div id="podcast-publishing" role="contentinfo">
+        <img class="spotify" src="./assets/spotify.svg" alt="spotify logo" aria-label="Spotify">
+        <img class="apple" src="./assets/apple-podcast.svg" alt="apple podcast logo" aria-label="Apple Podcast">
+        <img class="google" src="./assets/google-podcasts.svg" alt="google podcasts logo" aria-label="Google Podcasts">
+        <img class="pocket" src="./assets/pocket-casts.svg" alt="pocket casts logo" aria-label="Pocket Casts">
       </div>
     </div>
   </div>

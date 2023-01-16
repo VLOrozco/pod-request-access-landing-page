@@ -359,3 +359,7 @@ body {
     margin-left: auto;
   }
 }
+
+.sr-only {
+  visibility: hidden;
+}
