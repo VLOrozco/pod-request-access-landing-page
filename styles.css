@@ -347,7 +347,7 @@ body {
 
   .bg-image {
     background-image: url("./assets/image-desktop.jpg");
-    top: -1em;
+    top: 4em;
     right: 0;
     width: 68%;
   }
@@ -355,7 +355,7 @@ body {
   .bg-dots {
     position: absolute;
     right: 0;
-    bottom: 4.4em;
+    bottom: 1.6em;
     margin-left: auto;
   }
 }
