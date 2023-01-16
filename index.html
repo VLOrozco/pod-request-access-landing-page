@@ -14,7 +14,7 @@
   <!-- background images & logo -->
   <div class="bg-image" aria-hidden="true"></div>
 
-  <img id="logo" src="./assets/logo.svg" alt="pod logo">
+  <img id="logo" src="./assets/logo.svg" alt="pod logo" aria-label="pod logo">
 
   <div id="container">
     <div class="wrapper grid">
@@ -32,9 +32,9 @@
 
       <!-- Email Validation Form -->
       <form id="email-form" name="emailForm" action="#">
-        <input id="input" class="input" type="text" name="email" placeholder="Email address" required />
+        <input id="input" class="input" type="text" name="email" placeholder="Email address" required/>
         <label for="input" class="sr-only" aria-labelledby="input">Email address</label>
-        <button id="btn" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.emailForm.email)">Request Access</button>
+        <button id="btn" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.emailForm.email)" aria-label="Submit">Request Access</button>
         <span id="validation">
           Oops! Please check your email
         </span>
@@ -51,7 +51,7 @@
   </div>
 
   <!-- background image -->
-  <img class="bg-dots" src="./assets/bg-pattern-dots.svg" alt="">
+  <img class="bg-dots" src="./assets/bg-pattern-dots.svg" alt="" aria-hidden="true">
 
 </body>
 </html>
